@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma SIG AgroPlanificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Plataforma SIG AgroPlanificador</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#mapa">Mapa Interactivo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#perfil">Mi Perfil</a></li> <!-- Enlace a perfil -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página de inicio -->
+    <section id="home">
+        <h2>Bienvenido a la Plataforma SIG AgroPlanificador</h2>
+        <p>Mejora la planificación de cultivos y aumenta la productividad agrícola con datos geoespaciales actualizados.</p>
+        <button class="button"><a href="#registro">Regístrate ahora</a></button>
+    </section>
+
+    <!-- Características -->
+    <section id="caracteristicas">
+        <h2>Características de la Plataforma</h2>
+        <ul>
+            <li>Mapas interactivos</li>
+            <li>Alertas climáticas personalizadas</li>
+            <li>Recomendaciones de cultivos según tipo de terreno</li>
+            <li>Acceso por SMS para zonas con poca conectividad</li>
+        </ul>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios">
+        <h2>Beneficios para los Agricultores</h2>
+        <p>Optimiza el uso de recursos y mejora la productividad agrícola con herramientas accesibles y precisas.</p>
+    </section>
+
+    <!-- Mapa Interactivo usando iframe de Google Maps -->
+    <section id="mapa">
+        <h2>Mapa Interactivo</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63322.51496560387!2d-79.52578435289871!3d-7.279791080382622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904d3664fe5425bf%3A0xb551b441981166a2!2sGuadalupe!5e0!3m2!1ses-419!2spe!4v1750626407898!5m2!1ses-419!2spe" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Registro -->
+    <section id="registro">
+        <h2>Regístrate</h2>
+        <form id="registroForm">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required>
+            
+            <label for="ubicacion">Ubicación</label>
+            <input type="text" id="ubicacion" required>
+
+            <button type="submit" class="button">Registrarse</button>
+        </form>
+    </section>
+
+    <!-- Perfil -->
+    <section id="perfil">
+        <h2>Mi Perfil</h2>
+        <p id="nombreUsuario"></p>
+        <p id="emailUsuario"></p>
+        <p id="ubicacionUsuario"></p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="contactNombre">Nombre</label>
+            <input type="text" id="contactNombre" required>
+
+            <label for="contactEmail">Correo electrónico</label>
+            <input type="email" id="contactEmail" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Plataforma SIG AgroPlanificador | Todos los derechos reservados.</p>
+        <p><a href="#contacto">Contáctanos</a> | <a href="#politica-privacidad">Política de Privacidad</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
